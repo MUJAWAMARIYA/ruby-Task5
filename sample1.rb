@@ -22,7 +22,6 @@ end
  random_choice_from_enemy
 end
 end
-
 class Janken
    
     def pon(player_hand,enemy_hand)
