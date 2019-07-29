@@ -37,7 +37,7 @@ end
 player = Player.new
 enemy = Enemy.new
 janken = Janken.new
-janken.pon(player.hand, enemy.hand)
+janken.pon(player.hand,enemy.hand)
 
 
 
