@@ -1,8 +1,12 @@
 class Player
    def hand
-   puts "enter the number you want"
+
+   puts "enter the number you want in range of [0,1,2]"
+   puts "0:gao"
+   puts "1:chocki"
+   puts "2:par"
    hand=gets.to_i
-    while hand < 0 || hand > 3 do
+    while hand < 0 || hand > 2 || gets.to_s do
     puts "out of range try gain"
     hand=gets.to_i
     end
@@ -27,10 +31,8 @@ class Janken
       puts  " you are looser"
     else
     puts "draw out do a gain"
-    player = Player.new
-	  enemy = Enemy.new
-	  janken = Janken.new
-	  janken.pon(player.hand,enemy.hand)
+    load('sample1.rb')
+  
     end
  end
 end
